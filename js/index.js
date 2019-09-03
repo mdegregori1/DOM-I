@@ -41,21 +41,22 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Remaining Images
-let codeImage = document.getElementById("cta-img");
+const codeImage = document.getElementById("cta-img");
 codeImage.setAttribute('src', siteContent["cta"]["img-src"])
 
-let mainImage = document.getElementById("middle-img");
+const mainImage = document.getElementById("middle-img");
 mainImage.setAttribute("src", siteContent["main-content"]["middle-img-src"])
 
 // button
 
-let mainButton = document.querySelector(".cta-text button");
+const mainButton = document.querySelector(".cta-text button");
 mainButton.textContent = "Get Started";
 
 // Main 'Dom' Text
 
 const mainDom = document.querySelector('h1');
 mainDom.textContent = "DOM Is Awesome";	    
+
 
 //Navigation Bar 
 const navBar = document.querySelectorAll('a');
