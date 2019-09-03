@@ -59,9 +59,11 @@ mainDom.textContent = "DOM Is Awesome";
 
 //Navigation Bar 
 const navBar = document.querySelectorAll('a');
+navBar.forEach(element => element.style.color = "green");
 for (let i = 0; i < navBar.length; i++) {
 navBar[i].textContent = siteContent.nav[`nav-item-${i + 1}`];
 }
+
 
 // Main Text Headers
 const mainHeaders = document.querySelectorAll(".main-content h4");
@@ -93,3 +95,19 @@ bottomContactText[2].textContent = siteContent['contact']['email'];
 const Footer = document.querySelector('footer p');
 Footer.textContent = siteContent['footer']['copyright'];
 
+// Color Change 
+const newNav = document.querySelector("nav");
+
+const newWhy = document.createElement('a');
+newWhy.textContent = "Why Great Idea?";
+newWhy.href = "#";
+newWhy.style.color = "green";
+
+ const newGift = document.createElement('a');
+newGift.textContent = "Gift";
+newGift.href = "#";
+newGift.style.color = "green";
+
+// element add
+newNav.prepend(newWhy);
+newNav.appendChild(newGift);
