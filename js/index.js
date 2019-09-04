@@ -109,6 +109,6 @@ newGift.textContent = "Gift";
 newGift.href = "#";
 newGift.style.color = "green";
 
-// element add
+// element add append and prepend
 newNav.prepend(newWhy);
 newNav.appendChild(newGift);
